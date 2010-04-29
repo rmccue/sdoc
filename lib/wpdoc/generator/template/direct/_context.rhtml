@@ -31,7 +31,7 @@
         end
     %>
     <% unless list.empty? %>
-    <div class="sectiontitle">Methods</div>
+    <div class="sectiontitle">Functions</div>
     <dl class="methods">
     <% each_letter_group(list) do |group| %>
         <dt><%= group[:name] %></dt>
@@ -120,7 +120,7 @@
             next if methods.empty? 
             next unless @options.show_all || visibility == :public || visibility == :protected || methods.any? {|m| m.force_documentation }
             %>
-            <div class="sectiontitle"><%= type.capitalize %> <%= visibility.to_s.capitalize %> methods</div>
+            <div class="sectiontitle"><%= type.capitalize %> <%= visibility.to_s.capitalize %> functions</div>
             <% methods.each do |method| %>
             <div class="method">
                 <div class="title" id="<%= method.aref %>">
@@ -137,7 +137,7 @@
                 <% end %>
                 <% unless method.aliases.empty? %>
                 <div class="aka">
-                    This method is also aliased as
+                    This function is also aliased as
                     <% method.aliases.each do |aka| %>
                     <a href="<%= context.aref_to aka.path %>"><%= h aka.name %></a>
                     <% end %>
