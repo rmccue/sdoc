@@ -72,10 +72,10 @@
     <% end %>
 
     <% unless context.classes_and_modules.empty? %>
-    <div class="sectiontitle">Classes and Modules</div>
+    <div class="sectiontitle"><%= context.full_name == 'Global' ? 'Index' : 'Classes and Modules' %></div>
     <ul>
         <% (context.modules.sort + context.classes.sort).each do |mod| %>
-        <li><span class="type"><%= mod.type.upcase %></span> <a href="<%= context.aref_to mod.path %>"><%= mod.full_name %></a></li>
+        <li><span class="type"><%= context.full_name == 'Global' ? '' : mod.type.upcase %></span> <a href="<%= context.aref_to mod.path %>"><%= context.full_name == 'Global' ? mod.name : mod.full_name %></a></li>
         <% end %>
     </ul>
     <% end %>
