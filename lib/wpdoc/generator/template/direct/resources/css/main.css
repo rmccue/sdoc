@@ -260,9 +260,16 @@ tt {
     line-height: 1.25em;
 }
 
-.method .sourcecode p.source-link {
+.method .sourcecode p.source-link
+{
   text-indent: 0em;
   margin-top: 0.5em;
+}
+
+.method .sourcecode p.codex-link
+{
+  text-indent: 0em;
+  margin-top: -0.5em;
 }
 
 .method .aka {
@@ -272,7 +279,8 @@ tt {
   text-indent: 2em;
 }
 
-.method .source-link
+.method .source-link,
+.method .codex-link
 {
     font-size: 0.85em;
 }

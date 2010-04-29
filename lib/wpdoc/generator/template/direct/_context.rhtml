@@ -158,13 +158,15 @@
                         %>
                         | <a href="<%= "#{github}#L#{line}" %>" target="_blank" class="github_url">on GitHub</a>
                         <% end %>
-                        <%
-                            codex_links = get_codex_links(method.name)
-                            if codex_links
-                        %>
-                        | <%= codex_links %>
-                        <% end %>
                     </p>
+                    <%
+                        codex_links = get_codex_links(method.name)
+                        if codex_links
+                    %>
+                    <p class="codex-link">
+                        Codex: <%= codex_links %>
+                    </p>
+                    <% end %>
                     <div id="<%= method.aref %>_source" class="dyn-source">
                         <pre><%= method.markup_code %></pre>
                     </div>
