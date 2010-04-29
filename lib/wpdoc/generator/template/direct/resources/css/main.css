@@ -105,11 +105,13 @@ ol li
     background: #EDF3FE;
     border-bottom: 1px solid #ccc;
     padding: 1em 2em 0.5em 2em;
+    overflow: auto;
 }
 .banner h1
 {
     font-size: 1.2em;
     margin: 0;
+    float: left;
 }
 
 .banner h1 .type
@@ -129,6 +131,7 @@ ol li
     margin-top: 0.3em;
     margin-bottom: 0;
     font-size: 0.85em;
+    float: left;
 }
 
 .banner li
@@ -136,6 +139,15 @@ ol li
     list-style: none;
     margin-left: 0;
     margin-bottom: 0;
+}
+
+.banner div.logo
+{
+    background: url(../dextrous_web.png);
+    text-indent: -9999px;
+    width: 292px;
+    height: 62px;
+    float: right;
 }
 
 pre 
