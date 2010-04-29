@@ -144,7 +144,7 @@ ol li
     margin-bottom: 0;
 }
 
-.banner div.logo
+.banner div.logo a
 {
     background: url(../dextrous_web.png);
     text-indent: -9999px;

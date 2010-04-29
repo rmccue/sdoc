@@ -16,7 +16,7 @@
     <div class="banner">
         <div class="grr_container">
           <h1>
-              <% if klass.full_name != 'Global' %>
+              <% if klass.parent && klass.parent.full_name != 'Global' && klass.full_name != 'Global' %>
               <span class="type"><%= klass.module? ? 'Module' : 'Class' %></span> 
               <% end %>
               <%= h klass.full_name %> 
@@ -37,7 +37,7 @@
           </ul>
         </div>
         <div class="logo">
-          The Dextrous Web
+          <a target="_blank" href="http://thedextrousweb.com">The Dextrous Web</a>
         </div>
     </div>
     <div id="bodyContent">
