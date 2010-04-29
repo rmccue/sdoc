@@ -14,13 +14,15 @@
 
 <body>     
     <div class="banner">
-        <h1>
-            <%= h file.name %>
-        </h1>
-        <ul class="files">
-            <li><%= h file.relative_name %></li>
-            <li>Last modified: <%= file.file_stat.mtime %></li>
-        </ul>
+        <div class="grr_container">
+          <h1>
+              <%= h file.name %>
+          </h1>
+          <ul class="files">
+              <li><%= h file.relative_name %></li>
+              <li>Last modified: <%= file.file_stat.mtime %></li>
+          </ul>
+        </div>
         <div class="logo">
           The Dextrous Web
         </div>

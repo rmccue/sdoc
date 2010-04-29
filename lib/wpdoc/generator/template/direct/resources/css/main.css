@@ -107,11 +107,15 @@ ol li
     padding: 1em 2em 0.5em 2em;
     overflow: auto;
 }
+.banner .container_grr
+{
+  float: left
+}
+
 .banner h1
 {
     font-size: 1.2em;
     margin: 0;
-    float: left;
 }
 
 .banner h1 .type
@@ -131,7 +135,6 @@ ol li
     margin-top: 0.3em;
     margin-bottom: 0;
     font-size: 0.85em;
-    float: left;
 }
 
 .banner li

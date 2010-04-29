@@ -14,26 +14,28 @@
 
 <body>     
     <div class="banner">
-        <h1>
-            <% if klass.full_name != 'Global' %>
-            <span class="type"><%= klass.module? ? 'Module' : 'Class' %></span> 
-            <% end %>
-            <%= h klass.full_name %> 
-            <% if klass.type == 'class' && !klass.superclass.nil? %>
-                <span class="parent">&lt; 
-                    <% if String === klass.superclass %>
-                    <%= klass.superclass %>
-                    <% elsif !klass.superclass.nil? %>
-                    <a href="<%= klass.aref_to klass.superclass.path %>"><%= h klass.superclass.full_name %></a>
-                    <% end %>
-                </span>
-            <% end %>
-        </h1>
-        <ul class="files">
-            <% klass.in_files.each do |file| %>
-            <li><a href="<%= "#{rel_prefix}/#{h file.path}" %>"><%= h file.absolute_name %></a></li>
-            <% end  %>
-        </ul>
+        <div class="grr_container">
+          <h1>
+              <% if klass.full_name != 'Global' %>
+              <span class="type"><%= klass.module? ? 'Module' : 'Class' %></span> 
+              <% end %>
+              <%= h klass.full_name %> 
+              <% if klass.type == 'class' && !klass.superclass.nil? %>
+                  <span class="parent">&lt; 
+                      <% if String === klass.superclass %>
+                      <%= klass.superclass %>
+                      <% elsif !klass.superclass.nil? %>
+                      <a href="<%= klass.aref_to klass.superclass.path %>"><%= h klass.superclass.full_name %></a>
+                      <% end %>
+                  </span>
+              <% end %>
+          </h1>
+          <ul class="files">
+              <% klass.in_files.each do |file| %>
+              <li><a href="<%= "#{rel_prefix}/#{h file.path}" %>"><%= h file.absolute_name %></a></li>
+              <% end  %>
+          </ul>
+        </div>
         <div class="logo">
           The Dextrous Web
         </div>
