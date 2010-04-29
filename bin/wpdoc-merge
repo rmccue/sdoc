@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby -KU
 
-require File.dirname(__FILE__) + '/../lib/sdoc' # add extensions
-require 'sdoc/merge'
+require File.dirname(__FILE__) + '/../lib/wpdoc' # add extensions
+require 'wpdoc/merge'
 
 begin
   m = SDoc::Merge.new

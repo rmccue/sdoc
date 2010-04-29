@@ -16,9 +16,9 @@ require 'rdoc/rdoc'
 require 'rdoc/generator'
 require 'rdoc/generator/markup'
 
-require 'sdoc/github'
-require 'sdoc/templatable'
-require 'sdoc/helpers'
+require 'wpdoc/github'
+require 'wpdoc/templatable'
+require 'wpdoc/helpers'
 
 class RDoc::ClassModule
   def document_self_or_methods
@@ -37,7 +37,7 @@ class RDoc::Generator::SHtml
   include SDoc::Templatable
   include SDoc::Helpers
 
-  GENERATOR_DIRS = [File.join('sdoc', 'generator'), File.join('rdoc', 'generator')]
+  GENERATOR_DIRS = [File.join('wpdoc', 'generator'), File.join('rdoc', 'generator')]
 
   # Used in js to reduce index sizes
   TYPE_CLASS  = 1

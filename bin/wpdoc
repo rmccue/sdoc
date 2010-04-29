@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -KU
 
-require File.dirname(__FILE__) + '/../lib/sdoc' # add extensions
+require File.dirname(__FILE__) + '/../lib/wpdoc' # add extensions
 
 begin
   r = RDoc::RDoc.new

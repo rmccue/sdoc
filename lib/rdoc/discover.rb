@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), '/../sdoc')
+require File.join(File.dirname(__FILE__), '/../wpdoc')

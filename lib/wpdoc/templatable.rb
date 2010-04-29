@@ -1,4 +1,4 @@
-require "sdoc"
+require "wpdoc"
 
 module SDoc::Templatable
 	### Load and render the erb template in the given +templatefile+ within the

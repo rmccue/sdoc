@@ -23,10 +23,10 @@ begin
   require 'jeweler'
   
   spec = Gem::Specification.new do |gem|
-    gem.name = "sdoc"
+    gem.name = "wpdoc"
     gem.summary = "rdoc html with javascript search index."
     gem.email = "voloko@gmail.com"
-    gem.homepage = "http://github.com/voloko/sdoc"
+    gem.homepage = "http://github.com/dxw/wpdoc"
     gem.authors = ["Volodya Kolesnikov"]
     gem.add_dependency("rdoc", ">= 2.4.2")
     
